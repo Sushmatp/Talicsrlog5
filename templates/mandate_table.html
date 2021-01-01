@@ -1,0 +1,39 @@
+!<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<div class="col-md-12">
+            <h2 class="text-center">Current Mandates</h2>
+            <table class="table" border="2">
+              <thead class ="thread-dark">
+                <tr>
+                  <th>JDCode</th>
+                  <th>HiringManager</th>
+                  <th>VacancyCode</th>
+                  <th>Openings</th>
+                  <th>No_Filled</th>
+                </tr>
+              </thead>
+              <tbody>
+                  {% for items in table %}
+                      <tr>
+                            <td>{{items.JDCode}}</td>
+                            <td>{{items.HiringManager}}</td>
+                            <td>{{items.VacancyCode}}</td>
+                            <td>{{items.Openings}}</td>
+                            <td>{{items.No_Filled}}</td>
+                      </tr>
+                  {% endfor %}
+
+
+                
+              </tbody>
+            </table>
+
+            
+          </div>
+</head>
+<body>
+
+</body>
+</html>
